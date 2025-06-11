@@ -1,11 +1,14 @@
 import React from "react"
+import Route from "./Router"
+import Router from "./Router"
+
 
 
 function App() {
 
   return (
-    <div className="div  bg-amber-900">
-      <h1>Burger House</h1>  
+    <div>
+      <Router/>
     </div>
   )
 }
