@@ -10,6 +10,11 @@ body{
     --color-primary:#ffc045;
     --color-secondary:#3d2514;
     --color-red-primary:#bf2222;
+    --color-primary-hover:#f5b029;
+    --color-secondary-hover:#231105;
+    --color-red-primary-hover:#990e0e;
+
+    /* font */
     --font-secondary:"Alfa Slab One";
 }
 
@@ -21,3 +26,6 @@ body{
     transition: all .2s ease-in-out ;
 }
 
+.shadowTitleSecondary{
+    text-shadow: 3px 3px #fee7ba;
+}
