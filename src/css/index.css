@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+
+body{
+    font-family:"Roboto";
+}
 @theme{
     --color-primary:#ffc045;
     --color-secondary:#3d2514;
     --color-red-primary:#bf2222;
+    --font-secondary:"Alfa Slab One";
 }
+
+.animate{
+    -webkit-transition: all .2s ease-in-out ;
+    -moz-transition: all .2s ease-in-out ;
+    -o-transition: all .2s ease-in-out ;
+    -ms-transition: all .2s ease-in-out ;
+    transition: all .2s ease-in-out ;
+}
+
