@@ -16,6 +16,11 @@ body{
 
     /* font */
     --font-secondary:"Alfa Slab One";
+
+    /* spacing */
+    --spacing-17:'4.25rem',
+    --spacing-18:'4.50rem',
+    --spacing-19:'4.75rem',
 }
 
 .animate{
