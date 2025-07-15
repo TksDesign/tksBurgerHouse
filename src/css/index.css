@@ -3,38 +3,41 @@
 @import "tailwindcss";
 
 
-body{
-    font-family:"Roboto";
+body {
+    font-family: "Roboto";
     @apply text-secondary;
 }
-p{
+
+p {
     @apply mb-4;
 }
-@theme{
-    --color-primary:#ffc045;
-    --color-secondary:#3d2514;
-    --color-red-primary:#bf2222;
-    --color-primary-hover:#f5b029;
-    --color-secondary-hover:#231105;
-    --color-red-primary-hover:#990e0e;
+
+@theme {
+    --color-primary: #ffc045;
+    --color-secondary: #3d2514;
+    --color-red-primary: #bf2222;
+    --color-primary-hover: #f5b029;
+    --color-secondary-hover: #231105;
+    --color-red-primary-hover: #990e0e;
 
     /* font */
-    --font-secondary:"Alfa Slab One";
+    --font-secondary: "Alfa Slab One";
 
     /* spacing */
-    --spacing-17:'4.25rem',
-    --spacing-18:'4.50rem',
-    --spacing-19:'4.75rem',
+    --spacing-17: '4.25rem',
+        --spacing-18:'4.50rem',
+        --spacing-19:'4.75rem',
 }
 
-.animate{
-    -webkit-transition: all .2s ease-in-out ;
-    -moz-transition: all .2s ease-in-out ;
-    -o-transition: all .2s ease-in-out ;
-    -ms-transition: all .2s ease-in-out ;
-    transition: all .2s ease-in-out ;
+.animate {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.shadowTitleSecondary{
+.shadowTitleSecondary {
     text-shadow: 3px 3px #fee7ba;
 }
+
