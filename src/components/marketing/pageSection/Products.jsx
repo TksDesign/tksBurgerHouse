@@ -20,7 +20,7 @@ export default function Products() {
             <p className='text-center'>
                 Découvrez nos burgers savoureux, préparés avec des ingrédients frais et de qualité. Commandez en ligne et profitez d’une expérience gourmande unique, à déguster sur place ou à emporter. Rejoignez-nous et laissez-vous tenter par le vrai goût du plaisir !
             </p>
-            <div className='grid grid-cols-3 gap-x-1 mt-20 h-screen '>
+            <div className='grid grid-cols-3 gap-x-1 mt-20 mb-40 '>
                 <div className='w-full h-full '>
                     <div className='relative w-full h-96 bg-primary'>
                         <img src={Product1} alt='' className=' absolute top-0 left-0 w-full h-full object-cover z-0 ' />

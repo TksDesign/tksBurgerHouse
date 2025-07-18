@@ -79,7 +79,7 @@ export default function Carousel() {
     return (
         <Container>
             <div
-                className="w-full h-full flex items-center justify-around mb-20"
+                className="w-full h-full flex items-center gap-22 justify-center mb-20"
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
                 onMouseDown={handleMouseDown}
@@ -91,9 +91,9 @@ export default function Carousel() {
                     i === index && (
                         <div
                             key={i}
-                            className={`w-full max-w-5xl h-full animate-3d-entry`}
+                            className={`w-full max-w-4xl h-full animate-3d-entry`}
                         >
-                            <div className="flex w-full h-110 bg-white rounded shadow-2xl shadow-black p-8 overflow-hidden gap-8">
+                            <div className="flex w-full h-90 bg-white rounded shadow-2xl shadow-black p-8 overflow-hidden gap-8">
                                 <div className="flex flex-col mb-4">
                                     <Headind margin="marg" variant="h3">{evenement.titre}</Headind>
                                     <Headind  margin="marg" variant="h3" theme="secondary">{evenement.description}</Headind>
@@ -119,7 +119,7 @@ export default function Carousel() {
                     {evenements.map((_, i) => (
                         <button
                             key={i}
-                            className={`h-3 w-3 rounded-full transition-colors duration-300 ${i === index ? "bg-secondary" : "bg-gray-300"}`}
+                            className={`h-4 w-3 rounded-full transition-colors duration-300 ${i === index ? "bg-amber-500" : "bg-gray-300"}`}
                             onClick={() => setIndex(i)}
                         />
                     ))}
