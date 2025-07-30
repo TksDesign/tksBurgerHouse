@@ -79,7 +79,7 @@ export default function Carousel() {
     return (
         <Container>
             <div
-                className="w-full h-full flex items-center gap-22 justify-center mb-20"
+                className="w-full h-full flex items-center gap-10 lg:gap-22 justify-center mb-50"
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
                 onMouseDown={handleMouseDown}
@@ -91,17 +91,17 @@ export default function Carousel() {
                     i === index && (
                         <div
                             key={i}
-                            className={`w-full max-w-4xl h-full animate-3d-entry`}
+                            className={`w-full max-w-4xl h-full animate-3d-entry animate`}
                         >
-                            <div className="flex w-full h-90 bg-white rounded shadow-2xl shadow-black p-8 overflow-hidden gap-8">
-                                <div className="flex flex-col mb-4">
+                            <div className="flex max-sm:flex-col w-full h-90 max-sm:h-120 bg-white rounded shadow-2xl shadow-black p-8 overflow-hidden gap-8 max-sm:gap-0">
+                                <div className="flex flex-col mb-4 max-sm:mb-0">
                                     <Headind margin="marg" variant="h3">{evenement.titre}</Headind>
                                     <Headind  margin="marg" variant="h3" theme="secondary">{evenement.description}</Headind>
                                     {evenement.descriptionLongue && (
-                                        <p className="text-gray-600 mt-8 max-w-4xl">{evenement.descriptionLongue}</p>  
+                                        <p className="text-gray-600 max-sm:text-sm mt-8 max-w-4xl">{evenement.descriptionLongue}</p>  
                                     )}
                                 </div>
-                                <div className="relative w-full h-full bg-amber-500 ">
+                                <div className="relative w-full h-full  bg-amber-500 ">
                                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 z-10"></div>
                                     <img
                                         src={evenement.image}

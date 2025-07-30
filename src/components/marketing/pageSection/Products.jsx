@@ -20,53 +20,53 @@ export default function Products() {
             <p className='text-center'>
                 Découvrez nos burgers savoureux, préparés avec des ingrédients frais et de qualité. Commandez en ligne et profitez d’une expérience gourmande unique, à déguster sur place ou à emporter. Rejoignez-nous et laissez-vous tenter par le vrai goût du plaisir !
             </p>
-            <div className='grid grid-cols-3 gap-x-1 mt-20 mb-40 '>
+            <div className='grid lg:grid-cols-3 gap-x-1 mt-20 mb-20 '>
                 <div className='w-full h-full '>
-                    <div className='relative w-full h-96 bg-primary'>
+                    <div className='relative w-full md:w-2/3 lg:w-full mx-auto h-96 bg-primary'>
                         <img src={Product1} alt='' className=' absolute top-0 left-0 w-full h-full object-cover z-0 ' />
                     </div>
                     <div className='flex flex-col items-center justify-center px-5 pb-5'>
                         <Headind variant="h3">
                             Burger Classique
                         </Headind>
-                        <p className='text-center '>
+                        <p className='text-center w-full md:w-2/3 lg:w-full mx-auto'>
                             Un burger classique avec un steak juteux, de la laitue croquante, des tomates fraîches et notre sauce spéciale.
                         </p>
-                        <Button color="danger" className='font-secondary'>
+                        <Button color="danger" className='font-secondary  mb-10'>
                             Ajouter au panier
                         </Button>
                     </div>
                     
                 </div>
                  <div className='w-full h-full '>
-                    <div className='relative w-full h-96 bg-primary'>
+                    <div className='relative w-full md:w-2/3 lg:w-full mx-auto h-96 bg-primary'>
                         <img src={Product2} alt='' className=' absolute top-0 left-0 w-full h-full object-cover z-0' />
                     </div>
                     <div className='flex flex-col items-center justify-center px-5 pb-5'>
                         <Headind variant="h3">
                             Burger Classique
                         </Headind>
-                        <p className='text-center '>
+                        <p className='text-center w-full md:w-2/3 lg:w-full mx-auto'>
                             Un burger classique avec un steak juteux, de la laitue croquante, des tomates fraîches et notre sauce spéciale.
                         </p>
-                        <Button color="danger" className='font-secondary'>
+                        <Button color="danger" className='font-secondary mb-10'>
                             Ajouter au panier
                         </Button>
                     </div>
                     
                 </div>
                  <div className='w-full h-full '>
-                    <div className='relative w-full h-96 bg-primary'>
+                    <div className='relative w-full md:w-2/3 lg:w-full mx-auto h-96 bg-primary'>
                         <img src={Product3} alt='' className=' absolute top-0 left-0 w-full h-full object-cover z-0' />
                     </div>
                     <div className='flex flex-col items-center justify-center px-5 pb-5'>
                         <Headind variant="h3">
                             Burger Classique
                         </Headind>
-                        <p className='text-center '>
+                        <p className='text-center w-full md:w-2/3 lg:w-full mx-auto '>
                             Un burger classique avec un steak juteux, de la laitue croquante, des tomates fraîches et notre sauce spéciale.
                         </p>
-                        <Button color="danger" className='font-secondary'>
+                        <Button color="danger" className='font-secondary mb-10'>
                             Ajouter au panier
                         </Button>
                     </div>

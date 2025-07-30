@@ -9,17 +9,17 @@ export default function Booking() {
     return (
         <Container>
             <div className='relative mb-20 '>
-                <img src={Burger} alt="un hamburger" className='absolute -top-20 -left-30' />
-                <img src={Assiete} alt="une Assiete de hamburger frite" className='absolute -bottom-52 -right-96' />
-                <img src={Sauce} alt="une sauce" className='absolute bottom-0 left-0' />
-                <div className='max-w-3xl mx-auto px-10 py-20'>
+                <img src={Burger} alt="un hamburger" className='max-sm:hidden absolute -top-20 -left-30' />
+                <img src={Assiete} alt="une Assiete de hamburger frite" className='hidden xl:block absolute -bottom-52 -right-96' />
+                <img src={Sauce} alt="une sauce" className='hidden lg:block absolute bottom-0 left-0' />
+                <div className='max-w-3xl mx-auto sm:px-10 md:py-20'>
                     <Headind variant="h3" position="center" >
                         Réservation
                     </Headind>
                     <Headind position="center" theme="secondary" className="mt-5">
                         Reservez votre table
                     </Headind>
-                    <form className='grid grid-cols-2 gap-x-7 gap-y-6 mt-20'>
+                    <form className='grid grid-cols-1 sm:grid-cols-2 gap-x-7 gap-y-6 mt-20'>
                         <div>
                             <label htmlFor="name" className='block mb-2 uppercase'>Nom</label>
                             <input

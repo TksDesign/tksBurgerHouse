@@ -16,24 +16,24 @@ export default function Button({ children, className = "", color, theme }) {
     switch (theme) {
         case 'small':
             return (
-                <div>
+                
                     <button className={`${className} ${background} px-4 py-2 uppercase shadow-xs text-white 
                          text-xs font-medium animate`}>{children}</button>
-                </div>
+                
             )
         case 'big':
             return (
-                <div>
-                    <button className={`${className} ${background} px-8 py-4 uppercase shadow-2xl text-white 
-                         text-base font-medium animate`}>{children}</button>
-                </div>
+                
+                    <button className={`${className} ${background} px-4 py-3 md:px-8  md:py-4 uppercase shadow-2xl text-white 
+                        text-sm md:text-base font-medium animate`}>{children}</button>
+                
             )
         default:
             return (
-                <div>
+                
                     <button className={`${className} ${background} px-4 py-3 uppercase shadow-2xl text-white 
-                         text-sm font-medium animate`}>{children}</button>
-                </div>
+                         text-xs md:text-sm font-medium animate`}>{children}</button>
+                
             )
     }
 

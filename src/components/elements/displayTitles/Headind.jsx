@@ -58,8 +58,8 @@ export default function Headind(props) {
             )
         default:
             return (
-                <div className={`flex my-0 ${positionClass === "center" ? "items-center justify-center" : ""}`}>
-                    <h2 className={`${theme === "secondary" ? "text-5xl" : "text-3xl"} ${classDefault} ${font} ${color}`}>
+                <div className={`flex my-0 py-5 ${positionClass === "center" ? "items-center justify-center" : ""}`}>
+                    <h2 className={`${theme === "secondary" ? "text-3xl lg:text-5xl  max-lg:text-center" : "text-3 max-lg:text-center"} ${classDefault} ${font} ${color}`}>
                         {children}
                     </h2>
                 </div>
